@@ -6,41 +6,27 @@ package project.project;
  */
 public class App 
 {
-	  public static void main(String[] args) {
-
-		    //Launch 10 threads that make the operation with a different number
-		    for (int i=1; i<=10; i++){
-		      Calculator calculator=new Calculator(i);
-		      Thread thread=new Thread(calculator);
-		      thread.start();/*from  w  w  w .  ja v a  2 s.  co  m*/
-		    }
-		  }
-		}
-		/**
-		 *  This class prints the multiplication table of a number
-		 */
-		class Calculator implements Runnable {
-
-		  /**
-		   *  The number
-		   */
-		  private int number;
-		  
-		  /**
-		   *  Constructor of the class
-		   * @param number : The number
-		   */
-		  public Calculator(int number) {
-		    this.number=number;
-		  }
-		  
-		  /**
-		   *  Method that do the calculations
-		   */
-		  @Override
-		  public void run() {
-		    for (int i=1; i<=10; i++){
-		      System.out.printf("%d * %d = %d\n",number,i,i*number);
-		    }
-		  }
+	public class SleepExp1 extends Thread  
+	{    
+	    public void run()  
+	    {    
+	    	int num=8;
+	        for(int i=1;i<5;i++)  
+	        {    
+	            try  
+	            {  
+	                Thread.sleep(500);  
+	            }catch(InterruptedException e){System.out.println(e);}    
+	            for(int j=1;j<=10;j++) {
+	            	System.out.printf("%d * %d = %d\n",num,j,num*j);
+	            }
+	        }    
+	    }    
+	    public void main(String args[])
+	    {    
+	        SleepExp1 t1=new SleepExp1();    
+    
+	        t1.start();   
+	    }    
+	}  
 }
