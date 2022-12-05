@@ -6,7 +6,7 @@ package project.project;
  */
 public class App 
 {
-	static class TestSleepMethod1 extends Thread{ 
+	class TestSleepMethod1 extends Thread{ 
 		int num=8;
 		 public void run(){    
 		  for(int i=1;i<5;i++){   
@@ -15,7 +15,7 @@ public class App
 		    System.out.printf("%d * %d = %d\n",num,i,num*i);    
 		  }    
 		 }    
-		 public static void main (String args[]){    
+		 public void main (String args[]){    
 		  TestSleepMethod1 t1=new TestSleepMethod1();    
 		  t1.start();      
 		 }    
