@@ -5,8 +5,7 @@ package project.project;
  *
  */
 public class App extends Thread
-{
-	static class TestSleepMethod1{ 
+{ 
 		int num=8;
 		 public void run(){    
 		  for(int i=1;i<=10;i++){   
@@ -20,8 +19,7 @@ public class App extends Thread
 		  }    
 		 }    
 		 public static void main(String args[]){    
-		  TestSleepMethod1 t1=new TestSleepMethod1();    
+		  App t1=new App();    
 		  t1.run();      
 		 }    
-	}
 }
