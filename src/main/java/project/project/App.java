@@ -18,6 +18,5 @@ public class App extends Thread
 		 public static void main(String args[]) throws InterruptedException {
 			 App a=new App();
 			 a.multiply(8);
-			 a.multiply(6);
 		 }
 }
