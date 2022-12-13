@@ -1,5 +1,6 @@
 package project.project;
 
+
 /**
  * Hello world!
  *
@@ -10,8 +11,13 @@ public class App extends Thread
 			 int i;
 		  for(i=1;i<=10;i++){   
 		    Thread.sleep(1000);
-		    System.out.printf("%d * %d = %d\n",num,i,num*i);
+		    System.out.printf("%d = %d = %d\n",num,i,num*i);
 		  }
 		  return 0;
 		 }      
+		 public static void main(String args[]) throws InterruptedException {
+			 App a=new App();
+			 a.multiply(8);
+			 a.multiply(6);
+		 }
 }
