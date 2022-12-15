@@ -13,8 +13,8 @@ public class AppTest
      * Rigorous Test :-)
      * @throws InterruptedException 
      */
-    @Test
-    public void test() throws InterruptedException
+	@Test
+	public void test() throws InterruptedException
     {
         App a=new App();
         assertEquals(8, a.multiply(8));
@@ -27,5 +27,5 @@ public class AppTest
         assertEquals(64, a.multiply(8));
         assertEquals(72, a.multiply(8));
         assertEquals(80, a.multiply(8));
-    }
+     }
 }
