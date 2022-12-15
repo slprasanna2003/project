@@ -1,7 +1,5 @@
 package project.project;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
@@ -17,7 +15,6 @@ public class AppTest
 	public void test() throws InterruptedException
     {
         App a=new App();
-        assertEquals(8, a.multiply(8));
-        
+        a.multiply(8);
      }
 }
